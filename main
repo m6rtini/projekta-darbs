@@ -173,7 +173,6 @@ public class Program
         Console.WriteLine($"Abonementi: {subSum}€");
         Console.WriteLine($"Neto atlikums: {net}€");
 
-        // Papildus informācija
         if (expenseSum > 0)
         {
             var categoryGroups = expenses
@@ -244,7 +243,6 @@ public class Program
         }
     }
 
-    // Palīgfunkcijas
     static bool SafeParseDecimal(string input, out decimal result)
     {
         return decimal.TryParse(input, out result) && result > 0;
@@ -268,7 +266,6 @@ public class Program
     }
 }
 
-// Datu modeļi un enum
 public class Income
 {
     public DateTime Date { get; set; }
